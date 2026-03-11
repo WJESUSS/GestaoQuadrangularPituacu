@@ -1,0 +1,39 @@
+name: Deploy Sistema
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout código
+        uses: actions/checkout@v3
+
+      - name: Instalar Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: Build Backend
+        run: |
+          cd backend
+          mvn clean package -DskipTests
+
+      - name: Instalar Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Build Frontend
+        run: |
+          cd frontend
+          npm install
+          npm run build
