@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.gestaoigrejaemcelula.demo.GestaoquadrangularApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.560 s -- in com.gestaoigrejaemcelula.demo.GestaoquadrangularApplicationTests

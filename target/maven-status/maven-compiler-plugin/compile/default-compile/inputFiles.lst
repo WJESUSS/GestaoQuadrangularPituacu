@@ -6,7 +6,9 @@
 /home/wash/Músicas/quadrangular/backend/src/main/java/com/gestaoigrejaemcelula/demo/security/config/OpenApiConfig.java
 /home/wash/Músicas/quadrangular/backend/src/main/java/com/gestaoigrejaemcelula/demo/domain/entity/Celula.java
 /home/wash/Músicas/quadrangular/backend/src/main/java/com/gestaoigrejaemcelula/demo/aplication/service/NotificacaoService.java
+/home/wash/Músicas/quadrangular/backend/src/main/java/com/gestaoigrejaemcelula/demo/domain/repository/HistoricoStatusMembroRepository.java
 /home/wash/Músicas/quadrangular/backend/src/main/java/com/gestaoigrejaemcelula/demo/aplication/service/CelulaService.java
+/home/wash/Músicas/quadrangular/backend/src/main/java/com/gestaoigrejaemcelula/demo/aplication/service/AniversarioService.java
 /home/wash/Músicas/quadrangular/backend/src/main/java/com/gestaoigrejaemcelula/demo/aplication/service/RelatorioPdfService.java
 /home/wash/Músicas/quadrangular/backend/src/main/java/com/gestaoigrejaemcelula/demo/aplication/dto/PastorMetricasDTO.java
 /home/wash/Músicas/quadrangular/backend/src/main/java/com/gestaoigrejaemcelula/demo/domain/repository/UsuarioRepository.java
@@ -59,7 +61,9 @@
 /home/wash/Músicas/quadrangular/backend/src/main/java/com/gestaoigrejaemcelula/demo/aplication/dto/RankingCelulaProjection.java
 /home/wash/Músicas/quadrangular/backend/src/main/java/com/gestaoigrejaemcelula/demo/domain/entity/Evento.java
 /home/wash/Músicas/quadrangular/backend/src/main/java/com/gestaoigrejaemcelula/demo/aplication/service/MembroService.java
+/home/wash/Músicas/quadrangular/backend/src/main/java/com/gestaoigrejaemcelula/demo/aplication/dto/AniversarianteDTO.java
 /home/wash/Músicas/quadrangular/backend/src/main/java/com/gestaoigrejaemcelula/demo/aplication/dto/DiscipuladoSemanaResumoDTO.java
+/home/wash/Músicas/quadrangular/backend/src/main/java/com/gestaoigrejaemcelula/demo/domain/entity/HistoricoStatusMembro.java
 /home/wash/Músicas/quadrangular/backend/src/main/java/com/gestaoigrejaemcelula/demo/domain/entity/HistoricoCelula.java
 /home/wash/Músicas/quadrangular/backend/src/main/java/com/gestaoigrejaemcelula/demo/aplication/service/DiscipuladoService.java
 /home/wash/Músicas/quadrangular/backend/src/main/java/com/gestaoigrejaemcelula/demo/aplication/dto/TransferirMembroDTO.java
@@ -97,6 +101,7 @@
 /home/wash/Músicas/quadrangular/backend/src/main/java/com/gestaoigrejaemcelula/demo/domain/enums/Perfil.java
 /home/wash/Músicas/quadrangular/backend/src/main/java/com/gestaoigrejaemcelula/demo/web/controller/UsuarioController.java
 /home/wash/Músicas/quadrangular/backend/src/main/java/com/gestaoigrejaemcelula/demo/security/config/ModelMapperConfig.java
+/home/wash/Músicas/quadrangular/backend/src/main/java/com/gestaoigrejaemcelula/demo/web/controller/AniversarioController.java
 /home/wash/Músicas/quadrangular/backend/src/main/java/com/gestaoigrejaemcelula/demo/aplication/dto/RelatorioDiscipuladoDTO.java
 /home/wash/Músicas/quadrangular/backend/src/main/java/com/gestaoigrejaemcelula/demo/web/controller/AlertaCelulaController.java
 /home/wash/Músicas/quadrangular/backend/src/main/java/com/gestaoigrejaemcelula/demo/aplication/dto/CadastroUsuarioDTO.java
