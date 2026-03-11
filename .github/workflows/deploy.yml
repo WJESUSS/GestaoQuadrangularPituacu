@@ -1,18 +1,14 @@
-name: Deploy Sistema
+name: Build
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout código
         uses: actions/checkout@v3
 
@@ -22,18 +18,11 @@ jobs:
           distribution: temurin
           java-version: 21
 
-      - name: Build Backend
+      - name: Ver estrutura
+        run: ls -R
+
+      - name: Build backend
         run: |
           cd backend
-          mvn clean package -DskipTests
-
-      - name: Instalar Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 20
-
-      - name: Build Frontend
-        run: |
-          cd frontend
-          npm install
-          npm run build
+          chmod +x mvnw
+          ./mvnw clean package -DskipTests
