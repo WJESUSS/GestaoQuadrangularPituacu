@@ -1,29 +1,30 @@
-name: Java CI with Maven
+name: Build
 
 on:
   push:
-    branches: [ "main", "master" ]
-  pull_request:
-    branches: [ "main", "master" ]
+    branches: [ "main" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Código
-        uses: actions/checkout@v4
+      - name: Checkout código
+        uses: actions/checkout@v3
 
-      - name: Configurar JDK 17
-        uses: actions/setup-java@v4
+      - name: Instalar Java
+        uses: actions/setup-java@v3
         with:
-          java-version: '17'
-          distribution: 'temurin'
-          cache: maven
+          distribution: temurin
+          java-version: 21
 
-      - name: Listar arquivos (Diagnóstico)
-        run: ls -R  # Isso vai nos mostrar onde o pom.xml está de verdade nos logs do GitHub
+      - name: Build backend
+        run: |
+          chmod +x mvnw
+          ./mvnw clean package -DskipTests
 
-      - name: Build do Backend
-        # Aqui usamos o caminho relativo direto para o arquivo
-        run: mvn -f backend/pom.xml clean install -DskipTests
+      - name: Build frontend
+        working-directory: ./frontend
+        run: |
+          npm install
+          npm run build
